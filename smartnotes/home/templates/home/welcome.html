@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>Welcome Page</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="css/style.css" rel="stylesheet" />
-</head>
-
-<body>
-  <h1>Welcome to the Smart Notes App</h1>
-  <h3>Today is {{today}}</h3>
-</body>
-
-</html>
+{% extends 'base.html' %}
+{%block title%} notes_list {%endblock%}
+{%block content%}
+<h1>WELCOME HOME</h1>
+<p>today is {{today}}</p>
+<a href="{%url 'notes.list'%}" class="btn btn-primary">Go To the Smart Notes</a>
+{%endblock%}
